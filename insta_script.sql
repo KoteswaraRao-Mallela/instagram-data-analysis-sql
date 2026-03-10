@@ -566,13 +566,7 @@ SELECT
 FROM dummy;
 
 select * from dummy_backup;
-
 select * from dummy;
-
-select count(column_name)
-from information_schema.columns
-where table_name = 'dummy_backup'
-and table_schema = 'insta_db';
 
 describe dummy_backup;
 
